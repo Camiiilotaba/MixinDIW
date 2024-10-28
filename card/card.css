@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: #000;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 900px;
+  height: 600px;
+  background: #ffffff;
+  margin: 10px;
+  margin-left: 350px;
+}
+.container .imgBx {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background: #bfbfbf;
+  transition: 0.3s linear;
+}
+.container .imgBx:before {
+  content: "Nike";
+  position: absolute;
+  top: 30px;
+  left: 24px;
+  color: #000;
+  opacity: 0.2;
+  font-size: 8em;
+  font-weight: 800;
+}
+.container .imgBx img {
+  position: relative;
+  width: 700px;
+  transform: rotate(-30deg);
+  left: -50px;
+  transition: 0.9s linear;
+}
+.container .details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.container .details h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.4em;
+  line-height: 1em;
+  color: #444;
+}
+.container .details h2 span {
+  font-size: 0.4em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #999;
+}
+.container .details p {
+  max-width: 85%;
+  margin-left: 15%;
+  color: #333;
+  font-size: 15px;
+  margin-bottom: 36px;
+}
+.container .details h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.5em;
+  color: #999;
+  float: left;
+}
+.container .details .sizes {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+.container .details .sizes button {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b3b3b3;
+  color: #333;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  font-weight: 600;
+}
+.container .details .sizes button:hover {
+  background-color: #ccc;
+  color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.container .details .sizes button.active {
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #0d0d0d;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+.container .details button {
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 40px;
+  float: right;
+}
+
+.btn-comprar {
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.btn-comprar:hover {
+  background-color: #ccc;
+  color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* responsive */
+@media (max-width: 1080px) {
+  .container {
+    height: auto;
+  }
+  .container .imgBx {
+    padding: 40px;
+    box-sizing: border-box;
+    width: 100% !important;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+  }
+  .container .imgBx img {
+    left: initial;
+    max-width: 100%;
+    transform: rotate(0deg);
+  }
+  .container .details {
+    width: 100% !important;
+    height: auto;
+    padding: 20px;
+  }
+  .container .details p {
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+footer {
+  position: fixed;
+  right: 16px;
+  bottom: 12px;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+}/*# sourceMappingURL=card.css.map */
