@@ -1,0 +1,36 @@
+@import 'variables'; 
+@import 'header';
+@import 'card'; 
+
+.card-estilo {
+    @include estilos-card(
+        $fuente-primaria,   
+        $color-fondo, 
+        $color-container, 
+        $color-talla-activo, 
+        $color-talla-hover, 
+        $color-texto, 
+        $color-texto-secundario, 
+        $color-descripcion, 
+        $color-boton, 
+        $color-boton-texto, 
+        2em, 
+        1em, 
+        1em, 
+        1em
+    ); 
+    
+    border: 2px solid $color-texto-secundario;
+    font-size: $tamano-texto;
+}
+
+.header-estilo {
+    @include estilos-header(
+        $color-fondo-header, 
+        $color-texto,  
+        $color-boton-busqueda, 
+        $color-boton-busqueda-hover
+    ); 
+
+    background-color: darken($color-fondo-header, 10%);
+}
